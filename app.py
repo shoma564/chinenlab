@@ -21,7 +21,7 @@ def about():
 def event():
     return render_template('event.html')
 
-@app.route("/event/01")
+@app.route("/event01")
 def event01():
     return render_template('event01.html')
 

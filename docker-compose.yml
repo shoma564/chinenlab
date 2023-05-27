@@ -1,5 +1,6 @@
 version: '3'
 services:
+
   flask:
     container_name: flask
 #    image: shomaigu/flask-base:latest
@@ -8,6 +9,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 80:80
+      - 3031:3031
     restart: always
     tty: true
     volumes:
@@ -15,3 +17,18 @@ services:
     - ./flask/app.py /usr/src/app/app.py
     - ./flask/templates/head.html /usr/src/app/templates/head.html
     - ./flask/static /usr/src/app/static
+    environment:
+      TZ: Asia/Tokyo
+
+
+  web:
+    container_name: web-server
+    hostname: web-server
+    build: ./web
+    volumes:
+    - "./web/nginx.conf:/etc/nginx/nginx.conf"
+    - "./tmp/nginx_log:/var/log/nginx"
+    ports:
+      - "4231:80"
+    environment:
+      TZ: Asia/Tokyo

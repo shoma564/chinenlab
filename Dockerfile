@@ -4,6 +4,7 @@ FROM shomaigu/flask-base:latest
 #RUN apt autoremove 
 #RUN pip3 install --upgrade pip setuptools
 #RUN mkdir -p /usr/src/app/templates
+RUN mkdir -p /var/www/
 
 ADD ./requirements.txt /usr/src/app/
 ADD ./app.py /usr/src/app/
@@ -15,3 +16,5 @@ ADD ./static /usr/src/app/static
 
 WORKDIR /usr/src/app/
 CMD ["python3", "/usr/src/app/app.py"]
+
+#CMD ["uwsgi","--ini","/var/www/uwsgi.ini"]

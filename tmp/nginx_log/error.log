@@ -1,0 +1,2 @@
+2023/05/27 22:10:09 [emerg] 1#1: host not found in upstream "app-server:3031" in /etc/nginx/nginx.conf:36
+2023/05/27 22:12:07 [emerg] 1#1: host not found in upstream "app-server:3031" in /etc/nginx/nginx.conf:36

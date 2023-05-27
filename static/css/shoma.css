@@ -1,5 +1,5 @@
 .empty-line {
-margin: 100px 0px 0px 100px;
+margin: 50px 0px 0px 50px;
 }
 
 body {
@@ -7,10 +7,14 @@ body {
 }
 
 .setsumei {
-margin: 0px 0px 0px 200px;
+margin: 0px 0px 0px 450px;
 }
 
 
+
+.syousai {
+margin: 10px
+}
 
 .kei1 {
 margin: 100px;

@@ -1,0 +1,36 @@
+{% extends "head.html" %}
+
+{% block content %}
+    
+<title> 知念研Website </title>
+
+  
+<h1>知念研Website</h1>
+<p>TM healthへのログイン</p>
+<form action="/result" method="post">
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <div>
+    <label for="user">user</label>
+    <input type="text" id="user" name="user" min="0" max="100" required>
+  </div>
+  <div>
+    <label for="password">password</label>
+    <input type="password" id="password" name="password" min="0" max="100" required>
+  </div>
+
+　<button type="submit" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">送信</font></font></button>
+</form>
+
+<a href="/touroku">アカウントを作成する場合</a>
+
+{% endblock %}

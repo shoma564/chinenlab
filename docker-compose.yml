@@ -7,9 +7,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - 80:80
-      - 3031:3031
+#    ports:
+#      - 80:80
+#      - 3031:3031
     restart: always
     tty: true
     volumes:

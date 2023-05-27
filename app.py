@@ -19,7 +19,7 @@ def about():
 
 @app.route("/event")
 def event():
-    return render_template('index.html')
+    return render_template('event.html')
 
 @app.route("/event/01")
 def event01():

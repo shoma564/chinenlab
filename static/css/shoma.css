@@ -7,14 +7,33 @@ body {
 }
 
 .setsumei {
-margin: 0px 0px 0px 450px;
+margin: 0px 0px 0px 400px;
 }
-
-
 
 .syousai {
 margin: 10px
 }
+
+.eventcard_group {
+display: flex
+}
+
+.eventcard1 {
+margin: 10px
+}
+
+.eventcard2 {
+margin: 10px
+}
+
+.eventcard3 {
+margin: 10px
+}
+
+.eventcard4 {
+margin: 10px
+}
+
 
 .kei1 {
 margin: 100px;

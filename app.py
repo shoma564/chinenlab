@@ -6,12 +6,24 @@ from datetime import timedelta
 
 
 
-app = Flask(__name__, static_folder='./templates/images/')
+app = Flask(__name__)
 
 
 @app.route("/")
 def index():
     return render_template('index.html')
+
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
+@app.route("/event")
+def event():
+    return render_template('index.html')
+
+@app.route("/event/01")
+def event01():
+    return render_template('event01.html')
 
 
 if __name__ == "__main__":

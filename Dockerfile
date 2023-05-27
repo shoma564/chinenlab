@@ -5,10 +5,10 @@ FROM shomaigu/flask-base:latest
 #RUN pip3 install --upgrade pip setuptools
 #RUN mkdir -p /usr/src/app/templates
 
-#ADD ./requirements.txt /usr/src/app/
+ADD ./requirements.txt /usr/src/app/
 ADD ./app.py /usr/src/app/
 ADD ./templates /usr/src/app/templates
-#ADD ./static /usr/src/app/static
+ADD ./static /usr/src/app/static
 
 #RUN pip3 install --no-cache-dir -r /usr/src/app/requirements.txt
 

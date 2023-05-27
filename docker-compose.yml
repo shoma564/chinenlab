@@ -12,6 +12,6 @@ services:
     tty: true
     volumes:
     - ./flask/requirements.txt /usr/src/app/
-    - ./flask/app.py /usr/src/app/
-    - ./flask/templates /usr/src/app/templates
-#    - ./flask/static /usr/src/app/static
+    - ./flask/app.py /usr/src/app/app.py
+    - ./flask/templates/head.html /usr/src/app/templates/head.html
+    - ./flask/static /usr/src/app/static
